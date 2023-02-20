@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/121128992/219883666-87fc8c15-d584-494a-bba0-8a57b4c697f1.png)
+![image](https://raw.githubusercontent.com/RacialGamer/UpsideDownPlayers/1.19.2/src/main/resources/dinnerbone/icon.png)
 # UpsideDownPlayers
 Turns everyone upside down just like dinnerbone!
 
