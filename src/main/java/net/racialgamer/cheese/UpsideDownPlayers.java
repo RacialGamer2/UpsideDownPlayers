@@ -5,7 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class UpsideDownPlayers implements ModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger("FastCrystals-Client");
+	public static final Logger LOGGER = LoggerFactory.getLogger("UpsideDownPlayers");
 
 	public UpsideDownPlayers() {
 	}
