@@ -1,11 +1,8 @@
 package net.racialgamer.cheese;
 
-import com.mojang.brigadier.CommandDispatcher;
-import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
-import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
-import net.minecraft.text.Text;
+import net.fabricmc.fabric.api.client.command.v1.ClientCommandManager;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.command.CommandRegistryAccess;
+import net.minecraft.text.Text;
 import net.racialgamer.cheese.commands.UpsideDownToggle;
 
 public enum Init {
@@ -17,11 +14,7 @@ public enum Init {
     }
 
     public void init() {
-        ClientCommandRegistrationCallback.EVENT.register(Init::registerCommands);
-    }
-
-    public static void registerCommands(CommandDispatcher<FabricClientCommandSource> dispatcher, CommandRegistryAccess registryAccess) {
-        UpsideDownToggle.register(dispatcher);
+        UpsideDownToggle.register(ClientCommandManager.DISPATCHER);
     }
 
     public boolean isEnabled() {
